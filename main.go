@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	port := flag.Int("port", -1, "443")
+	port := flag.Int("port", -1, "specify a port to use http rather than AWS Lambda")
 	flag.Parse()
 	listener := gateway.ListenAndServe
 	portStr := "n/a"
